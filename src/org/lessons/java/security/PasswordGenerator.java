@@ -28,8 +28,8 @@ public class PasswordGenerator {
             int year = input.nextInt();
             input.nextLine();
 
-            System.out.println("La tua password supersicura e':" + firstName.toLowerCase().replaceAll(" ", "-") + "-"
-                    + lastName.toLowerCase().replaceAll(" ", "-")
+            System.out.println("La tua password supersicura e':" + firstName.replaceAll(" ", "-") + "-"
+                    + lastName.replaceAll(" ", "-")
                     + "-" + color.toLowerCase().replaceAll(" ", "-") + "-" + (day + month + year));
         }
     }

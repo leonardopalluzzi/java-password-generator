@@ -6,7 +6,7 @@ public class PasswordGenerator {
 
     public static void main(String[] args) {
 
-        try (Scanner input = new Scanner(System.in);) {
+        try (Scanner input = new Scanner(System.in)) {
             System.out.println("Inserisci il tuo nome:");
             String firstName = input.nextLine();
 

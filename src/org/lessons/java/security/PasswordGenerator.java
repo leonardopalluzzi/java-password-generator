@@ -18,7 +18,9 @@ public class PasswordGenerator {
 
             System.out.println("Inserisci il tuo giorno di nascita:");
             int day = input.nextInt();
-            input.nextLine();
+            input.nextLine(); // serve dopo i nextInt() nel caso un cui volessimo mettere un nextLine(), senza
+                              // di questo verrebbe letta direttamente stringa vuota e non si avrebbe la
+                              // possibilita di inserire il valore pe la nextLine()
 
             System.out.println("Inserisci il tuo mese di nascita");
             int month = input.nextInt();
